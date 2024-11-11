@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Home page</title>
+
+</head>
+<body>
+   
+    <!-- top header -->
+    <header class="">
+        <div class="container ">
+            <div class="flex justify-between py-7 items-center">
+                    <!-- logo -->
+                <div>
+                    <a href="#">
+
+                        <img src="./images/tooplate_logo.png" alt="">
+                    </a>
+                </div>
+
+                <!-- info -->
+                <div class="text-slate-500 sm-md:hidden">
+                    <div>
+                        <span class="font-bold">Email :</span> <span>md.mikathossain@gmail.com</span></p>
+
+                    </div>
+                    <div>
+                        <span class="font-bold">
+                            Phone :
+                        </span>
+                        <span>01830492390</span>
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+    </header> 
+
+    <!-- navbar -->
+    <section class="bg-[#1b1b1b]">
+        <div class="container">
+            <div class="flex justify-between items-center ">
+                <div class="hidden md-lg:block">
+                    <button id="menu-btn">
+                        <i class="fa-solid fa-bars text-white" ></i>
+                    </button>
+                </div>
+                <!-- navbar desktop -->
+                <nav class="text-white/80 ">
+                    <ul class="flex gap-4 items-center md-lg:hidden">
+                        <li class="hover:text-white group relative py-3 ">
+                            
+                            <a href="index.html" class="relative after:absolute after:h-[100%] after:w-[1px] after:bg-white after:-right-[10px] after:top-[2px] text-[#60A306] ">Home <span><i class="fa-solid fa-angle-down  transition-all duration-500 icon group-hover:rotate-180"></i></span></a>
+
+                            <!-- Drop down menu -->
+                            <div class="origin-top-left group-hover:block hidden
+                             absolute left-0 top-full w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5  " role="menu">
+                                <div class="py-1">
+                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
+                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
+                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+                                    <form action="" role="none">
+                                        <button type="submit" class="text-gray-700 w-full text-left px-4 py-2 text-sm hover:bg-gray-100">
+                                            Sign out
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="hover:text-white py-3"><a href="Gallery.html" class="relative after:absolute after:h-[100%] after:w-[1px] after:bg-white after:-right-[10px] after:top-[2px]">Gallery <span><i class="fa-solid fa-angle-down"></i></span></a></li>
+                        <li class="hover:text-white py-3"><a href="News.html" class="relative after:absolute after:h-[100%] after:w-[1px] after:bg-white after:-right-[10px] after:top-[2px]">News <span><i class="fa-solid fa-angle-down"></i></span></a></li>
+                        <li class="py-3 hover:text-white"><a href="Blog.html" class="relative after:absolute after:h-[100%] after:w-[1px] after:bg-white after:-right-[10px] after:top-[2px]">Blog </a></li>
+                        <li class="py-3 hover:text-white"><a href="Contact.html" >Contact </a></li>
+                    </ul>
+                </nav>
+
+                
+                <!-- search -->
+                <div>
+                    <div class="flex rounded-sm relative">
+                        <input type="search" placeholder="search" class="px-2 py-1  border-none focus:outline-none rounded-md">
+                        <span class="absolute text-white py-[10px]  bg-[#5fa008] flex justify-center items-center right-0 px-[10px] rounded-r-md"><i class="fa-solid fa-magnifying-glass text-[12px] "></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- navbar mobile -->
+            <nav id="mobile-nav" class="text-white/80 hidden  w-full max-h-0 transition-all duration-1000 overflow-hidden md-lg:block">
+                <ul class="flex flex-col items-center   gap-3 py-2"> 
+                    <li class="hover:text-white group  ">
+                        <a href="index.html" class="relative flex items-center gap-1 ">Home <span><i class="fa-solid fa-angle-down group-hover:rotate-180 transition-all duration-500"></i></span></a>
+                    </li>
+
+                    <li class="hover:text-white"><a href="Gallery.html" class="relative flex items-center gap-1">Gallery <span><i class="fa-solid fa-angle-down"></i></span></a></li>
+                    <li class="hover:text-white"><a href="News.html" class="relative flex items-center gap-1">News <span><i class="fa-solid fa-angle-down"></i></span></a></li>
+                    <li class="hover:text-white"><a href="Blog.html" class="relative ">Blog </a></li>
+                    <li class="hover:text-white"><a href="Contact.html" >Contact </a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </section>
+
+    <!-- slider -->
+     <section class="py-6 bg-gray-400 border-b-2">
+        <div class="container">
+                <div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ">
+                                <img src="./images/slideshow/01.jpg" alt="" class="block object-cover mx-auto">
+                            </div>
+                            <div class="swiper-slide"> 
+                                <img src="./images/slideshow/02.jpg" alt="" class="block object-cover mx-auto"></div>
+                            <div class="swiper-slide"> 
+                                <img src="./images/slideshow/03.jpg" alt="" class="block object-cover mx-auto"></div>
+                            <div class="swiper-slide"> 
+                                <img src="./images/slideshow/04.jpg" alt="" class="block object-cover mx-auto"></div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </div>
+     </section>
+
+     <!-- welcome section -->
+      
+      <section class="py-8">
+        <div class="container">
+            <h2 class="text-3xl font-semibold mb-8">Welcome to Green Age</h2>
+            <div class="grid grid-cols-2 md:grid-cols-1 gap-8 ">
+                <div class="flex gap-6">
+                    <img src="./images/icon1.png" alt="" class="h-[80px]">
+                    <div>
+                        <a href="#" class="font-bold hover:underline text-lg mb-2">Download Free Templates </a>
+
+                        <p>Lorem ipsum dolor <a href="#"><strong class="text-orange-500">Website template</strong></a>  sit amet consectetur adipisicing elit. Impedit, quod.</p>
+                        <div class="flex justify-end mt-2"><a href="#" class="bg-blue-100 hover:bg-blue-200 text-blue-400 px-2.5 py-0.5 text-xs font-semibold mr-2 rounded ">more...</a></div>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <img src="./images/icon2.png" alt="" class="h-[80px]">
+                    <div>
+                        <a href="#" class="font-bold hover:underline text-lg mb-2">Download Free Templates </a>
+
+                        <p>Lorem ipsum dolor <a href="#"><strong class="text-orange-500">Website template</strong></a>  sit amet consectetur adipisicing elit. Impedit, quod.</p>
+                        <div class="flex justify-end mt-2"><a href="#" class="bg-blue-100 hover:bg-blue-200 text-blue-400 px-2.5 py-0.5 text-xs font-semibold mr-2 rounded ">more...</a></div>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <img src="./images/icon3.png" alt="" class="h-[80px]">
+                    <div>
+                        <a href="#" class="font-bold hover:underline text-lg mb-2">Download Free Templates </a>
+
+                        <p>Lorem ipsum dolor <a href="#"><strong class="text-orange-500">Website template</strong></a>  sit amet consectetur adipisicing elit. Impedit, quod.</p>
+                        <div class="flex justify-end mt-2"><a href="#" class="bg-blue-100 hover:bg-blue-200 text-blue-400 px-2.5 py-0.5 text-xs font-semibold mr-2 rounded ">more...</a></div>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <img src="./images/icon4.png" alt="" class="h-[80px]">
+                    <div>
+                        <a href="#" class="font-bold hover:underline text-lg mb-2">Download Free Templates </a>
+
+                        <p>Lorem ipsum dolor <a href="#"><strong class="text-orange-500">Website template</strong></a>  sit amet consectetur adipisicing elit. Impedit, quod.</p>
+                        <div class="flex justify-end mt-2"><a href="#" class="bg-blue-100 hover:bg-blue-200 text-blue-400 px-2.5 py-0.5 text-xs font-semibold mr-2 rounded ">more...</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- project section -->
+       <section class="py-8">
+        <div class="container">
+            <h2 class="text-3xl font-semibold mb-8">Latest Projects</h2>
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 gap-4">
+
+                <div class="">
+                    <h3 class="font-semibold mb-2">Lorem ipsum dolor sit.</h3>
+                  
+                    <a href="" class=" flex border p-1 border-slate-300">
+                        <img src="./images/tooplate_image_01.jpg" alt="" class="w-full" >
+                    </a>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo cupiditate quasi unde blanditiis </p>
+                        <div class="flex justify-end mt-2"><a href="#" class="bg-blue-100 hover:bg-blue-200 text-blue-400 px-2.5 py-0.5 text-xs font-semibold mr-2 rounded ">more...</a></div>
+                   
+                </div>
+                <div class="">
+                    <h3 class="font-semibold mb-2">Lorem ipsum dolor sit.</h3>
+                  
+                    <a href="" class=" flex border p-1 border-slate-300">
+                        <img src="./images/tooplate_image_02.jpg" alt="" class="w-full" >
+                    </a>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo cupiditate quasi unde blanditiis </p>
+                        <div class="flex justify-end mt-2"><a href="#" class="bg-blue-100 hover:bg-blue-200 text-blue-400 px-2.5 py-0.5 text-xs font-semibold mr-2 rounded ">more...</a></div>
+                   
+                </div>
+                <div class="">
+                    <h3 class="font-semibold mb-2">Lorem ipsum dolor sit.</h3>
+                  
+                    <a href="" class=" flex border p-1 border-slate-300">
+                        <img src="./images/tooplate_image_03.jpg" alt="" class="w-full" >
+                    </a>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo cupiditate quasi unde blanditiis </p>
+                        <div class="flex justify-end mt-2"><a href="#" class="bg-blue-100 hover:bg-blue-200 text-blue-400 px-2.5 py-0.5 text-xs font-semibold mr-2 rounded ">more...</a></div>
+                   
+                </div>
+               
+            </div>
+        </div>
+       </section>
+
+       <!-- footer section -->
+       <footer>
+        <section class="pt-8 ">
+            <div class="w-full mx-auto flex md:flex-col flex-row justify-center items-center  bg-black/50 py-4">
+                <p>Copyright <a href="#" class="font-bold text-lg text-slate-300">@md.mikat hossain</a></p>
+               
+                <p>Design <span class="font-bold text-lg text-slate-300">@md.mikat hossain</span></p>
+               
+            </div>
+        </section>
+       </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script>
+          var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      loop: true,
+      autoplay:{
+        delay:1500,disableOnInteraction: false
+      }
+    });
+
+    const btn = document.getElementById('menu-btn')
+    const mobileNav = document.getElementById('mobile-nav')
+
+    if(btn && mobileNav){
+        btn.addEventListener("click", ()=>{
+            mobileNav.classList.toggle("max-h-0")
+            mobileNav.classList.toggle("max-h-[400px]");
+        })
+    }
+
+   
+     </script>
+</body>
+</html>
